@@ -12,7 +12,7 @@ const ProjectCard = ({ project }: Props) => {
       {/* Display image if available */}
       {project.image && (
         <Image
-          src={`/${project.image}`}
+          src={`https://pm-s3-images-x.s3.ap-south-1.amazonaws.com/${project.image}`}
           alt={project.name}
           width={400}
           height={200}

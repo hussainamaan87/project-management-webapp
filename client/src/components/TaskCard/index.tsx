@@ -45,7 +45,7 @@ const TaskCard = ({ task }: Props) => {
             {task.attachments.map((attachment, index) => (
               <Image
                 key={index}
-                src={`/${attachment.fileURL}`}
+                src={`https://pm-s3-images-x.s3.ap-south-1.amazonaws.com/${attachment.fileURL}`}
                 alt={attachment.fileName}
                 width={200}
                 height={100}
@@ -99,7 +99,7 @@ const TaskCard = ({ task }: Props) => {
           {task.assignee && (
             <Image
               key={task.assignee.userId}
-              src={`/${task.assignee.profilePictureUrl!}`}
+              src={`https://pm-s3-images-x.s3.ap-south-1.amazonaws.com/${task.assignee.profilePictureUrl!}`}
               alt={task.assignee.username}
               width={30}
               height={30}
@@ -109,7 +109,7 @@ const TaskCard = ({ task }: Props) => {
           {task.author && (
             <Image
               key={task.author.userId}
-              src={`/${task.author.profilePictureUrl!}`}
+              src={`https://pm-s3-images-x.s3.ap-south-1.amazonaws.com/${task.author.profilePictureUrl!}`}
               alt={task.author.username}
               width={30}
               height={30}
