@@ -1,10 +1,10 @@
   "use client"
 
-  import React, { useEffect } from 'react'
-  import Navbar from '@/components/Navbar'
-
-  import StoreProvider, { useAppSelector } from './app/redux'
-  import { Sidebar } from './components/Sidebar'
+  import React, { useEffect } from 'react';
+  import Navbar from '@/components/Navbar';
+  import AuthProvider from "./authProvider";
+  import StoreProvider, { useAppSelector } from './app/redux';
+  import { Sidebar } from './components/Sidebar';
 
   const DashBoardLayout = ({children} : {children: React.ReactNode}) => {
 
@@ -38,7 +38,9 @@
   const DashBoardWrapper = ({children} : {children: React.ReactNode}) =>{
     return (
       <StoreProvider>
+      <AuthProvider>
       <DashBoardLayout>{children}</DashBoardLayout>
+      </AuthProvider>
     </StoreProvider>
     );
   }
