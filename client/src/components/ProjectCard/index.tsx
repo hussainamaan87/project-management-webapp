@@ -24,17 +24,18 @@ const ProjectCard = ({ project }: Props) => {
           <div className="flex flex-1 flex-wrap items-center gap-2">
             {/* Tags if available */}
             {project.tags && project.tags.length > 0 && (
-              <div className="flex gap-2">
-                {project.tags.map((tag) => (
-                  <div
-                    key={tag}
-                    className="rounded-full bg-blue-100 px-2 py-1 text-xs"
-                  >
-                    {tag}
-                  </div>
-                ))}
-              </div>
-            )}
+            <div className="flex gap-2">
+              {project.tags.map((tag) => (
+                <div
+                  key={tag}
+                  className="rounded-full bg-blue-100 px-2 py-1 text-xs"
+                >
+                  {tag}
+                </div>
+              ))}
+            </div>
+          )}
+
           </div>
         </div>
 
