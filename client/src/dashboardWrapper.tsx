@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import {Sidebar}  from "@/components/Sidebar";
+import {Sidebar} from "@/components/Sidebar";
 import AuthProvider from "./authProvider";
 import StoreProvider, { useAppSelector } from "./app/redux";
 
@@ -18,7 +18,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
     } else {
       document.documentElement.classList.remove("dark");
     }
-  }, [isDarkMode]); 
+  });
 
   return (
     <div className="flex min-h-screen w-full bg-gray-50 text-gray-900">
