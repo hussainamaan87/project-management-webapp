@@ -7,6 +7,7 @@ export interface Project {
   description?: string;
   startDate?: string;
   endDate?: string;
+  priority?: string; 
   tags?: string[]; 
 }
 
