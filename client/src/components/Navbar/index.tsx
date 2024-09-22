@@ -1,5 +1,5 @@
 import React from 'react'
-import {Menu, Search, Settings, Sun, Moon, Home} from "lucide-react"
+import {Menu, Search, Settings, Sun, Moon} from "lucide-react"
 import Link from "next/link"
 import { useAppDispatch, useAppSelector } from '@/app/redux'
 import { setIsDarkMode, setIsSidebarCollapsed } from '@/state'
