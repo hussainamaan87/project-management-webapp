@@ -2,6 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export interface Project {
   id: number;
+  image?: string;
   name: string;
   description?: string;
   startDate?: string;
