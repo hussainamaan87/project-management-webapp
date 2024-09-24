@@ -1,6 +1,6 @@
 import { Project } from "@/state/api";
 import React from "react";
-import Image from "next/image"; // Assuming you're using Next.js for images
+import Image from "next/image"; 
 
 type Props = {
   project: Project;

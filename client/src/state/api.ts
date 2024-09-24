@@ -1,13 +1,15 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import { fetchAuthSession, getCurrentUser } from "aws-amplify/auth";
 
-export interface Project {
-  id: number;
+export type Project = {
   name: string;
-  description?: string;
+  description: string;
   startDate?: string;
   endDate?: string;
-}
+  priority?: string;
+  image?: string;
+  tags?: string[];
+};
 
 export enum Priority {
   Urgent = "Urgent",
