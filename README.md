@@ -2,7 +2,7 @@
 
 A full-stack project management web application built using **Next.js**, **TypeScript**, **Node.js (Express)**, and AWS services. The application features optimized task management, enhanced data handling, and secure cloud architecture.
 ## 🌐 Live Project
-Check out the live project of the Project Management WebApp here: [Live Demo](https://your-live-demo-link.com)
+Check out the live project of the Project Management WebApp here: [Live Demo](https://master.d3xlsguj1whep.amplifyapp.com/)
 (If the link data says no records means AWS RDS has been disabled to avoid payment).
 ## 🎥 Demo Video
 Watch a quick demonstration of the application in action: [Demo Video](https://your-demo-video-link.com)
